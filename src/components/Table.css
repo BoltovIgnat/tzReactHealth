@@ -1,0 +1,113 @@
+.ibc-table-header{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    align-items: center;
+    background: #1C2025;
+    color: #FFFFFF;
+}
+
+.ibc-header-date{
+    width: 40%;
+}
+
+.ibc-header-date::after{
+    content: url(/img/Vector.svg);
+    background: #EC174F;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 15%;
+    top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.ibc-header-date.transform::after,.ibc-header-distance.transform::after{
+    transform: rotate(180deg);
+}
+
+.ibc-header-distance::after{
+    content: url(/img/Vector.svg);
+    background: #EC174F;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 26%;
+    top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.ibc-col-date{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 12px;
+    padding-left: 16px;
+    
+    align-items: center;
+    color: rgba(28, 32, 37, 0.4);
+}
+
+.ibc-col-distance{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    align-items: center;
+
+    color: #1C2025;
+}
+
+.ibc-add-row-btn {
+    width: 100%;
+    height: 60px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    background: #EC174F;
+    border: none;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.ibc-shadow{
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.ibc-container-table{
+    position: relative;
+    max-height: 600px;
+    overflow: auto;
+}
+
+::-webkit-scrollbar{
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb{
+    height: 57px;   
+    background: #EC174F;
+}
+
+::-webkit-scrollbar-track{
+    background: #1C2025;
+}
+
+table{
+    margin-bottom: 0px !important;
+}

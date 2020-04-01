@@ -1,0 +1,41 @@
+.white-bg{
+    background: #FFFFFF !important;
+    
+}
+
+.chart-block{
+    height: 98%;
+}
+
+.ibc-chart-header{
+    padding-left: 40px;
+    padding-top: 20px;
+   
+}
+.ibc-zoom-btn{
+    font-family: 'PT Sans';
+    color: #000000;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 13px;
+    margin-top: 3%;
+    margin-left: 10%;
+    width: 80%;
+    padding: 1.5em;
+    background: #C4C4C4;
+    text-align: center; 
+}
+.ibc-chart-footer{
+    background: #1C2025;
+    width: 100%;
+    margin-left: 0;
+}
+.ibc-chart-footer-col{
+    color: #FFFFFF;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+}

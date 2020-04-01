@@ -1,26 +1,51 @@
 import React from 'react';
-import logo from './logo.svg';
+import Chart from './components/Chart';
+import Table from './components/Table';
+import {connect} from 'react-redux';
+
+import { Nav, Container, Row, Col} from 'react-bootstrap';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+  componentDidMount() {
+  }
+
+  render() {  
+      
+      return (
+        <>
+          <Nav
+            className="ibc-nav"
+            activeKey="/home"
+            onSelect={(selectedKey: any) => alert(`selected ${selectedKey}`)}
+          >
+            <Nav.Item className="ibc-nav-item">
+              Шагомер на тестовое задание
+            </Nav.Item>
+            
+          </Nav>
+          <Container className="ibc-container">
+            <Row className="justify-content-md-center">
+              <Col xs lg="4">
+                <Table/>
+              </Col>
+              <Col xs lg="7">
+                <Chart/>
+              </Col>
+            </Row>
+          </Container>
+        </>    
+      );
+  }
 }
 
-export default App;
+const mapStateToProps = (store: any) => {
+  return {
+    state: store
+  }
+}
+
+
+export default connect(mapStateToProps)(App);
